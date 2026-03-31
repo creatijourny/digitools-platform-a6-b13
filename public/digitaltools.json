@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with AI-powered suggestions and modern templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "image": "https://i.ibb.co.com/mKz7pCS/portfolio.png",
+    "tagType": "best seller",
+    "features": [                          
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "AI content suggestions",
+      "Cover letter generator",
+      "LinkedIn profile optimization"
+      
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Automation Toolkit",
+    "description": "A powerful set of tools designed to streamline repetitive tasks and boost productivity through smart automation.",
+    "price": 12.99,
+    "period": "monthly",
+    "image": "https://i.ibb.co.com/Y7jB52wB/operation.png",
+    "tagType": "popular",
+    "features": [
+      "Workflow automation builder",
+    "Pre-built automation templates",
+    "Integration with popular apps",
+    "Real-time monitoring and alerts",
+      "Hashtag suggestions",      
+      "Team collaboration"
+          ]
+  },
+  {
+    "id": 3,
+    "name": "Design Templates Pack",
+    "description": "A versatile collection of professionally crafted design templates to speed up your creative workflow.",
+    "price": 79.99,
+    "period": "one-time",
+    "image": "https://i.ibb.co.com/Zzg0T5X8/design-tool.png",
+    "tagType": "new",
+    "features": [
+      "500+ ready-to-use templates",
+    "Fully customizable layouts",
+    "Compatible with popular design tools",
+    "High-resolution graphics",
+    "Commercial use license included"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Website Builder Lite",
+    "description": "Build responsive websites with drag-and-drop tools.",
+    "price": 5.99,
+    "period": "monthly",
+    "image": "https://i.ibb.co.com/DxkfnMF/website.png",
+    "tagType": "popular",
+    "features": [
+      "Drag-and-drop editor",
+      "Mobile responsive templates",
+      "Free hosting",
+      "SEO tools",
+      "Custom domain support",
+      "E-commerce integration",
+      "Analytics integration",
+      "SSL security"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Email Marketing Suite",
+    "description": "Create and manage email campaigns with advanced automation.",
+    "price": 49.99,
+    "period": "yearly",
+    "image": "https://i.ibb.co.com/d0gRdLWF/emailmkt.png",
+    "tagType": "best seller",
+    "features": [
+      "Email templates",
+      "Automation workflows",
+      "Subscriber segmentation",
+      "Performance analytics",
+      "A/B testing",
+      "Drag-and-drop editor",
+      "Spam score checker",
+      "CRM integration"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "AI Copywriting Pro",
+    "description": "Generate high-quality marketing copy, blogs, and ads in seconds.",
+    "price": 19.99,
+    "period": "monthly",
+    "image": "https://i.ibb.co.com/LhkNphbH/aicopywriting.jpg",
+    "tagType": "new",
+    "features": [
+      "Blog writing",
+      "Ad copy generation",
+      "SEO optimization",
+      "Multi-language support",
+      "Tone customization",
+      "Plagiarism checker",
+      "Content rewriter",
+      "Keyword suggestions"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Project Management Pro",
+    "description": "Organize tasks, teams, and workflows with powerful project tracking.",
+    "price": 14.99,
+    "period": "monthly",
+    "image": "https://i.ibb.co.com/3ynrz1RW/projectmgt.png",
+    "tagType": "popular",
+    "features": [
+      "Task management",
+      "Kanban boards",
+      "Team collaboration",
+      "Time tracking",
+      "Gantt charts",
+      "File sharing",
+      "Notifications & reminders",
+      "Workflow automation"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Video Editor Cloud",
+    "description": "Edit and produce professional videos directly from your browser.",
+    "price": 24.99,
+    "period": "monthly",
+    "image": "https://i.ibb.co.com/3xGKR4c/videoeditor.jpg",
+    "tagType": "best seller",
+    "features": [
+      "Drag-and-drop editing",
+      "Stock media library",
+      "4K export",
+      "Audio editing tools",
+      "Transitions & effects",
+      "Subtitle generator",
+      "Green screen support",
+      "Cloud storage"
+    ]
+  }
+]
