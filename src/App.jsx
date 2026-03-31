@@ -5,6 +5,13 @@ import Banner from './components/homepage/Banner'
 import UserRating from './components/homepage/UserRating'
 import NavBar from './components/Navbar/NavBar'
 
+const getDigiTools = async () => {
+  const res = await fetch("/digitaltools.json")
+  return res.json()
+}
+
+const toolsPromise = getDigiTools()
+
 function App() {
   
 
@@ -13,7 +20,7 @@ function App() {
     <NavBar></NavBar>
     <Banner></Banner>
     <UserRating></UserRating>
-    <DigiTools></DigiTools>
+    <DigiTools toolsPromise={toolsPromise}></DigiTools>
     
 
       
