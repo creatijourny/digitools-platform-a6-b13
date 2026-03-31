@@ -1,5 +1,7 @@
 import React from 'react';
 import BannerImage from "../../assets/banner.png"
+import playImg from "../../assets/Play.png"
+import { FaDotCircle } from 'react-icons/fa';
 
 const Banner = () => {
     return (
@@ -7,32 +9,31 @@ const Banner = () => {
         <div>
             <div className="relative min-h-162.5 flex items-center overflow-hidden">
                 <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
-                    {/* Left Content */}
+
                     <div className="space-y-4">
+                        <div className="badge badge-info rounded-full p-3">
+                            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full">
+                                {FaDotCircle}
+                                New: AI-Powered Tools Available
+                            </span>                           
 
-
-                        <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter text-red-600">
+                        </div>
+                        <h1 className="text-5xl font-bold leading-tight tracking-tighter text-[#101727]">
                             Supercharge Your <br /> Digital Workflow
                             <br />
-                            
+
                         </h1>
 
                         <p className="text-lg text-zinc-700 max-w-lg">
-                            Experience the full spectrum of frontier intelligence — all the most
-                            advanced AI models, unified under a single, powerful subscription.
+                            Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.
                         </p>
 
                         <div className="flex flex-wrap gap-4 pt-4">
-                            <button className="bg-red-600 hover:bg-red-500 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-red-500/30 flex items-center gap-3 group text-white">
-                                Get Unlimited Access
-                                <span className="group-hover:translate-x-1 transition">→</span>
+                            <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-4 py-2 rounded-full font-semibold text-lg flex items-center gap-3 group text-white">Explore Products
                             </button>
-                        </div>
+                            <button className="bg-transparent border border-purple-500 px-4 py-2 rounded-full flex items-center gap-3 group bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"><span className=""><img src={playImg} alt="" /></span>Watch Demo
 
-                        <div className="flex items-center gap-8 text-sm text-zinc-600 pt-6">
-                            <div>✓ 50+ Frontier Models</div>
-                            <div>✓ No Usage Limits</div>
-                            <div>✓ Cancel Anytime</div>
+                            </button>
                         </div>
                     </div>
 
@@ -42,16 +43,12 @@ const Banner = () => {
                             <img
                                 className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl"
                                 src={BannerImage}
-                                alt="AI Models Banner"
+                                alt=""
 
                             />
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className='container mx-auto min-h-[30vh] bg-linear-to-r from-purple-500 to-purple-300'>
-                <h3 className='text-2xl'>Banner</h3>
             </div>
         </div>
     );
