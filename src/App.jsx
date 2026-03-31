@@ -1,5 +1,6 @@
 
 import './App.css'
+import DigiTools from './components/DigiTools/DigiTools'
 import Banner from './components/homepage/Banner'
 import UserRating from './components/homepage/UserRating'
 import NavBar from './components/Navbar/NavBar'
@@ -12,6 +13,7 @@ function App() {
     <NavBar></NavBar>
     <Banner></Banner>
     <UserRating></UserRating>
+    <DigiTools></DigiTools>
     
 
       

@@ -3,6 +3,7 @@ import BannerImage from "../../assets/banner.png"
 import playImg from "../../assets/Play.png"
 import { FaDotCircle } from 'react-icons/fa';
 
+
 const Banner = () => {
     return (
 
@@ -11,13 +12,11 @@ const Banner = () => {
                 <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
 
                     <div className="space-y-4">
-                        <div className="badge badge-info rounded-full p-3">
-                            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full">
-                                {FaDotCircle}
+                        <span className="bg-blue-100 text-purple-500 inline-flex items-center gap-2 px-3 py-1 rounded-full">
+                                <FaDotCircle/>
                                 New: AI-Powered Tools Available
-                            </span>                           
-
-                        </div>
+                            </span>
+                        
                         <h1 className="text-5xl font-bold leading-tight tracking-tighter text-[#101727]">
                             Supercharge Your <br /> Digital Workflow
                             <br />
