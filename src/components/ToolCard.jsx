@@ -11,7 +11,7 @@ const ToolCard = ({ tool, buyNow, setBuyNow }) => {
         setIsBuy(true);
         const isFound = buyNow.find(selected => selected.name === tool.name)
         if(isFound) {
-            alert("Item alresdy selected")
+            // alert("Item alresdy selected")
             setIsBuy(false)
             // toast.error("Item already in cart")
             return;

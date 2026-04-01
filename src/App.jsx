@@ -9,6 +9,8 @@ import NavBar from './components/Navbar/NavBar'
 import { ToastContainer } from 'react-toastify'
 import Footer from './components/Footer/Footer'
 import GetStarted from './components/StepStart/GetStarted'
+import SimplePricing from './components/Pricing/SimplePricing'
+import ToolsHead from './components/DigiTools/ToolsHead'
 
 
 const getDigiTools = async () => {
@@ -28,6 +30,7 @@ function App() {
       <NavBar></NavBar>
       <Banner></Banner>
       <UserRating></UserRating>
+      <ToolsHead />
       <div className='flex justify-center py-5'>
         <button onClick={() => setActiveBtn("product")} className={`btn w-30 ${activeBtn === "product" ?
           "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-transparent"}  text-lg border-none rounded-full`}>Products</button>
@@ -41,6 +44,7 @@ function App() {
       {/* react toastify */}
         <ToastContainer />
         <GetStarted />
+        <SimplePricing />
         <Footer></Footer>
     </>
   )
