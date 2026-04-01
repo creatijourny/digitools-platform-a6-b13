@@ -1,3 +1,7 @@
+Description:
+This project is a React application that explores and integrates various AI-driven digital tools, providing users with smart solutions for automation, content creation, and task management.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
