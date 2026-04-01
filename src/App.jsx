@@ -17,6 +17,8 @@ const toolsPromise = getDigiTools();
 
 function App() {
   const [activeBtn, setActiveBtn] = useState("product");
+  const [buyNow, setBuyNow] = useState([]);
+  
 
   return (
     <>
@@ -27,9 +29,11 @@ function App() {
         <button onClick={() => setActiveBtn("product")} className={`btn w-30 ${activeBtn === "product" ?
           "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-transparent"}  text-lg border-none rounded-full`}>Products</button>
         <button onClick={() => setActiveBtn("cart")} className={`btn w-30 ${activeBtn === "cart" ?
-          "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-transparent"}  text-lg border-none rounded-full`}>Cart (0)</button>
+          "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-transparent"}  text-lg border-none rounded-full`}>Cart ({buyNow.length})</button>
       </div>
-      {activeBtn === "product" ? (<DigiTools toolsPromise={toolsPromise}></DigiTools>) : <Cart></Cart>}
+      {activeBtn === "product" ? (<DigiTools toolsPromise={toolsPromise} 
+      setBuyNow={setBuyNow} buyNow={buyNow}></DigiTools>) : 
+      <Cart buyNow={buyNow} setBuyNow={setBuyNow}></Cart>}
 
       
 

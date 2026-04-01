@@ -2,11 +2,12 @@ import React from 'react';
 import { useState } from "react";
 import ToolFeatures from "../components/DigiTools/ToolFeatures"
 
-const ToolCard = ({ tool }) => {
+const ToolCard = ({ tool, buyNow, setBuyNow }) => {
     const [isBuy, setIsBuy] = useState(false);
 
     const handleBuyNow = () => {
         setIsBuy(true);
+        setBuyNow([...buyNow, tool])
     }
 
     return (

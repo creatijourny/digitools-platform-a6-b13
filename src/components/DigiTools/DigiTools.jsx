@@ -3,7 +3,7 @@ import { use } from 'react';
 import ToolCard from '../ToolCard';
 import Cart from '../Cart/Cart';
 
-const DigiTools = ({ toolsPromise }) => {
+const DigiTools = ({ toolsPromise, buyNow, setBuyNow }) => {
     const tools = use(toolsPromise);
 
     // const [activeBtn, setActiveBtn] = useState("product");
@@ -24,7 +24,7 @@ const DigiTools = ({ toolsPromise }) => {
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {
                     tools.map((tool) => (
-                       <ToolCard key={tool.id} tool={tool}></ToolCard>
+                       <ToolCard key={tool.id} tool={tool} buyNow={buyNow} setBuyNow={setBuyNow}></ToolCard>
                         )
                     )
                 }

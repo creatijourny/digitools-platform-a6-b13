@@ -8,7 +8,7 @@ const NavBar = () => {
       </div>
       <div className="flex-none">
         <button className="flex justify-between gap-2 text-lg font-bold">Coins
-          <img className='p-1' src="" alt="" />
+          {/* <img className='p-1' src="" alt="" /> */}
         </button>
       </div>
     </div>
