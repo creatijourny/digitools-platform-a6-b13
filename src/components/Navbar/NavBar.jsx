@@ -1,17 +1,47 @@
 import React from 'react';
+import { IoCartOutline } from 'react-icons/io5';
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm container mx-auto mb-4">
-      <div className="flex-1">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+    <div className="navbar px-10">
+      <div className="navbar-start">
+        <div className="flex items-center">
+          <h2 className='font-bold text-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>DigiTools</h2>
+        </div>
       </div>
-      <div className="flex-none">
-        <button className="flex justify-between gap-2 text-lg font-bold">Coins
-          {/* <img className='p-1' src="" alt="" /> */}
-        </button>
+      <div className="navbar-center hidden md:flex">
+        <ul className="menu menu-horizontal gap-10 px-1 text-lg">
+          <li>
+            <a>Products</a>
+          </li>
+          <li>
+            <a>Features</a>
+          </li>
+          <li>
+            <a>Pricing</a>
+          </li>
+          <li>
+            <a>Testimonials</a>
+          </li>
+          <li>
+            <a>FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-end gap-5">
+        <div className='relative inline-block'>
+        <IoCartOutline className='h-10 w-auto' />
+        <span className="absolute -top-2 -right-2 bg-transparent text-[#101727] px-1.5 rounded-full">
+          0
+        </span>
+        </div>
+        <a className="btn bg-transparent border-none rounded-full text-[#101727]">Login</a>
+        <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Get Started</a>        
       </div>
     </div>
+  );
+
+    
 //     <div className="px-10 navbar bg-base-100 shadow-sm">
 //   <div className="navbar-start">
 //     <div className="dropdown">
@@ -53,7 +83,7 @@ const NavBar = () => {
 //     <a className="btn">Button</a>
 //   </div>
 // </div>
-  );
+  
 };
 
 export default NavBar;
