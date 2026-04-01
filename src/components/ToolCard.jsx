@@ -1,12 +1,22 @@
 import React from 'react';
 import { useState } from "react";
 import ToolFeatures from "../components/DigiTools/ToolFeatures"
+import { toast } from 'react-toastify';
 
 const ToolCard = ({ tool, buyNow, setBuyNow }) => {
     const [isBuy, setIsBuy] = useState(false);
 
+    
     const handleBuyNow = () => {
         setIsBuy(true);
+        const isFound = buyNow.find(selected => selected.name === tool.name)
+        if(isFound) {
+            alert("Item alresdy selected")
+            setIsBuy(false)
+            // toast.error("Item already in cart")
+            return;
+        }
+        toast.success(`${tool.name} is added to cart`, {autoClose:3000});
         setBuyNow([...buyNow, tool])
     }
 

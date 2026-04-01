@@ -6,6 +6,7 @@ import DigiTools from './components/DigiTools/DigiTools'
 import Banner from './components/homepage/Banner'
 import UserRating from './components/homepage/UserRating'
 import NavBar from './components/Navbar/NavBar'
+import { ToastContainer } from 'react-toastify'
 
 
 const getDigiTools = async () => {
@@ -35,8 +36,8 @@ function App() {
       setBuyNow={setBuyNow} buyNow={buyNow}></DigiTools>) : 
       <Cart buyNow={buyNow} setBuyNow={setBuyNow}></Cart>}
 
-      
-
+      {/* react toastify */}
+        <ToastContainer />
     </>
   )
 }
