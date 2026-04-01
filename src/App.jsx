@@ -7,6 +7,7 @@ import Banner from './components/homepage/Banner'
 import UserRating from './components/homepage/UserRating'
 import NavBar from './components/Navbar/NavBar'
 import { ToastContainer } from 'react-toastify'
+import Footer from './components/Footer/Footer'
 
 
 const getDigiTools = async () => {
@@ -38,6 +39,7 @@ function App() {
 
       {/* react toastify */}
         <ToastContainer />
+        <Footer></Footer>
     </>
   )
 }

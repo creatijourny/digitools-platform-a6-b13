@@ -30,7 +30,7 @@ const Banner = () => {
                         <div className="flex flex-wrap gap-4 pt-4">
                             <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-4 py-2 rounded-full font-semibold text-lg flex items-center gap-3 group text-white">Explore Products
                             </button>
-                            <button className="bg-transparent border border-purple-500 px-4 py-2 rounded-full flex items-center gap-3 group bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"><span className=""><img src={playImg} alt="" /></span>Watch Demo
+                            <button className="bg-transparent border border-purple-500 px-4 py-2 rounded-full flex items-center gap-3 group hover:bg-[#4F39F6] hover:text-white transition"><span className=""><img src={playImg} alt="" /></span>Watch Demo
 
                             </button>
                         </div>
