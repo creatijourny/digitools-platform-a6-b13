@@ -1,6 +1,5 @@
 {
   "name": "digitools-platform-a6-b13",
-  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -34,4 +33,5 @@
       "vite": "$vite"
     }
   }
+
 }
